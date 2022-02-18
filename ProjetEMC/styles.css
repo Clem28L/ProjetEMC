@@ -24,10 +24,6 @@
   padding: 0 50px;
 }
 
-.logo {
-  width: 180px;
-}
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -37,7 +33,10 @@
   margin: 40px;
   overflow: hidden;
 }
-
+.logo {
+  width: 180px;
+  height: auto;
+}
 .nav-links a {
   font-size: 20px;
   font-weight: 500;
@@ -120,57 +119,12 @@
   color: white;
 }
 
-.delivery-container {
-  min-height: 300px;
-  background: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.delivery-container div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.delivery-icon {
-  font-size: 50px;
-  color: #add981;
-}
-
-.delivery-container .box-content {
-  font-weight: 500;
-  font-size: 20px;
-  margin-top: 30px;
-  width: 220px;
-  text-align: center;
-}
-
-.section-title {
-  position: relative;
-  font-family: "Abril Fatface", cursive;
-  font-size: 50px;
-  font-weight: 100;
-}
-
-.section-title::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 7px;
-  background: #add981;
-  bottom: 0;
-  box-shadow: 0 2px 2px #0000001f;
-}
-
 .introduction {
   margin-top: 25pt;
 }
 
 .big-title-two {
-  text-align: center;
-  width: 65%;
+  padding: 0 100px;
   color: black;
   font-size: 60px;
   font-family: "Abril Fatface", cursive;
@@ -182,22 +136,22 @@
   justify-content: stretch;
   margin: 10px;
 }
+
 .item1 {
   flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   box-shadow: 1px 1px 12px rgba(255, 41, 3, 0.466);
   border-radius: 20px;
   margin: 20px;
   padding: 10px;
-  text-align: center;
 }
 .item2 {
   flex: 1;
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
   border-radius: 20px;
   margin: 20px;
@@ -222,6 +176,38 @@ img {
   font-family: "Abril Fatface", cursive;
   font-weight: 50;
   text-decoration: underline dotted;
+}
+.info {
+  list-style-position: inside;
+}
+.liberty-container {
+  display: flex;
+  justify-content: stretch;
+  margin: 10px;
+}
+.effect::before {
+  content: "la liberté suivante";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffffdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -100%;
+  transition: left 0.4s;
+  font-size: 25px;
+  font-weight: 500;
+}
+.effect::hover::before {
+  left: 0;
+}
+.liberty {
+  box-shadow: 1px 1px 12px rgba(255, 41, 3, 0.466);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .footer {
