@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://use.typekit.net/cma1kei.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://use.typekit.net/cma1kei.css');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -74,7 +74,7 @@
   width: 40%;
   color: white;
   font-size: 80px;
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Abril Fatface', cursive;
   font-weight: 100;
 }
 
@@ -119,7 +119,7 @@
   padding: 0 100px;
   color: black;
   font-size: 60px;
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Abril Fatface', cursive;
   font-weight: 100;
 }
 .presentation-container {
@@ -137,8 +137,6 @@
   flex-direction: column;
   box-shadow: 1px 1px 12px rgba(255, 41, 3, 0.466);
   border-radius: 20px;
-  margin: 20px;
-  padding: 10px;
 }
 .item2 {
   display: flex;
@@ -152,13 +150,9 @@
 }
 img {
   height: 253px;
-  width: ;
 }
-.presentation-container img,
-p,
-h2 {
-  padding: 5px;
-}
+
+
 img {
   width: 195px;
   height: 260px;
@@ -168,27 +162,34 @@ img {
   margin: 20px;
   padding: 10px;
   font-size: 25px;
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Abril Fatface', cursive;
   font-weight: 50;
   text-decoration: underline dotted;
 }
 .info {
   list-style-position: inside;
 }
-.liberty-section {
+
+.big-title-two{
+  margin-top: 4rem;
 }
+
 .liberty-container {
+  margin-top: 4rem;
   display: flex;
-  margin: 10px;
-  width: 40%;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   list-style-position: inside;
+  gap: 3rem;
 }
 
 .liberty {
   box-shadow: 1px 1px 12px rgba(255, 41, 3, 0.466);
   border-radius: 20px;
-  margin: 20px;
-  padding: 25px;
+  width: 30%;
+  height: 25rem;
+  padding: 10px 10px 20px 30px;
 }
 
 li {
@@ -237,7 +238,7 @@ li {
   }
 
   .burger::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -253,7 +254,7 @@ li {
   }
 
   .burger::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
