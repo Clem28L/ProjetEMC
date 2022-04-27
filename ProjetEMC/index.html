@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+  <title>Travaille EMC</title>
+</head>
+
+<body>
+  <section id="home" class="home-container">
+    <header id="header" class="header">
+      <img src="images/logo2.png" alt="logo" class="logo" />
+      <div class="nav-links">
+        <ul class="nav-links">
+          <li>
+            <a href="#Accueil" id="Accueil" data-text="Accueil">Accueil</a>
+          </li>
+          <li>
+            <a href="#liberty-section" id="programme" data-text="Le programme">Le programme</a>
+          </li>
+          <li>
+            <a href="#footer" id="apropos" data-text="A propos">A propos</a>
+          </li>
+        </ul>
+      </div>
+      <div class="burger-container">
+        <div class="burger"></div>
+      </div>
+    </header>
+    <div class="landing">
+      <h1 class="big-title">Un jeune,<br> pour la france</h1>
+      <a href="#delivery" class="delivery-link">
+        <span class="scroll-text" data-text="Scroll">Scroll</span>
+        <i class="scroll-icon fas fa-angle-down"></i>
+      </a>
+    </div>
+  </section>
+  <section class="introduction">
+    <h2 class="big-title-two">Votre Candidat...</h2>
+    <div class="presentation-container">
+      <div class="item1">
+        <h2 class="title">Thomas Claye, un candidat pour vous</h2>
+        <p>
+        <ul class="info">
+          <li >J'ai 24 ans. MA jeunnesse sera une force.</li>
+          <li >blabla </li>
+          <li >Un programme tout vers la jeunesse. Les jeunes sont notre avenir</li>
+        </ul>
+        </p>
+
+      </div>
+
+        <img class="item2"src="Screenshot_20220319-134745_Snapchat.jpg" alt="portrait Candidat">
+     
+    </div>
+    </div>
+    <section class="liberty-section">
+      <h2 class="big-title-two">Les Liberté, au coeur de nos préoccupations </h2>
+      
+      <div class="liberty-container">
+        <div id="blue" class="liberty">
+
+          <h2 class="title-liberty">Liberté de pensée et de conscience</h2>
+          <h3>Quelques mesures pour cette liberté:</h3>
+          <ul>
+            <li class="txt">action de lutte contre les discriminations</li>
+            <li class="txt">Création d’un fichier où sont inscrits les personnes ayant eu un acte discriminatoire si récidive = sanction</li>
+          </ul>
+        </div>
+
+        <div id="white" class="liberty">
+          <h2 class="title-liberty">Liberté de la femme</h2>
+          <h3>Quelques mesures pour cette liberté:</h3>
+          <ul>
+            <li class="txt">postes égaux = Salaires égaux</li>
+            <li class="txt">
+              Les peines seront plus lourdes contre les violences contre les femmes.</br>la réclusion criminelle à
+              perpetuité s'il y a feminicide
+
+            </li>
+            <li class="txt">Parité dans les Entreprises 40% de femmes minimum dans la direction de l'Entreprise</li>
+      
+          </ul>
+        </div>
+      
+        <div id="red"class="liberty">
+          <h2 class="title-liberty">Liberté de la femme (suite)</h2>
+          <h3>Quelques mesures pour cette liberté:</h3>
+          <ul>
+            <li class="txt">Démarche du divorce simplifié</li>
+            <li lass="txt">Renforcement de l'écriture inclusive pour notamment les lettres du gouvernement ou dans les manuels
+              scolaires </li>
+           
+          </ul>
+        </div>
+        <div id="blue" class="liberty">
+          <h2 class="title-liberty">Liberté numérique : </h2>
+          <h3>Quelques mesures pour cette liberté:</h3>
+          <ul>
+            <li class="txt">renforcement de l’open data , donnée gouvernementale en libre accès sur le site internet du gouvernement </li>
+            <li class="txt">création d'une police du web pour une meilleure réglementation .</li>
+
+          </ul>
+        </div>
+        <div id="red" class="liberty">
+          <h2 class="title-liberty">Liberté d’expression :</h2>
+          <h3>Quelques mesures pour cette liberté:</h3>
+          <ul>
+            <li class="txt">transparence de l' information renforcée </li>
+            <li class="txt">favorisation des médias libres et indépendants en ligne et en presse écrite</li>
+            <li class="txt">mise en place de mesure de protection des libertés d'expression</li>
+          </ul>
+        </div>
+
+    </section>
+
+
+
+  </section>
+
+  <footer id="footer" class="footer">
+    <span class="copyrights">&copy; 2022 - Travaille EMC</br>Vous prouvez retrouver l'affiche de campagne en cliquant ici</br>Ce site a entierement été codé en ligne de code pur par nos main sans logiciel tiers de creation de site<br>Clement L. et Thomas C. pour le travaille D'EMC</span>
+    
+  
+  </footer>
+  <script>
+    const burgerContainer = document.querySelector(".burger-container");
+    const navLinks = document.querySelector(".nav-links");
+
+    burgerContainer.addEventListener("click", () => {
+      burgerContainer.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
