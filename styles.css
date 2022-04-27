@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://use.typekit.net/cma1kei.css');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://use.typekit.net/cma1kei.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
 .home-container {
   min-height: 100vh;
-  background: url(bg.jpg);
+  background: url(bg-R.jpg);
   background-size: cover;
 }
 
@@ -40,7 +40,7 @@
 .nav-links a {
   font-size: 20px;
   font-weight: 500;
-  color: white;
+  color: black;
   text-decoration: none;
   position: relative;
   display: block;
@@ -74,7 +74,7 @@
   width: 40%;
   color: white;
   font-size: 80px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   font-weight: 100;
 }
 
@@ -118,59 +118,60 @@
 .big-title-two {
   padding: 0 100px;
   color: black;
+  margin-bottom: 3%;
   font-size: 60px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   font-weight: 100;
 }
 .presentation-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: stretch;
-  margin: 10px;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
+.info {
+  margin-left: 3%;
+  font-size: 20px;
+}
 .item1 {
-  flex: 2;
-  flex-grow: 1;
-  flex-basis: 0;
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 12px rgba(255, 41, 3, 0.466);
   border-radius: 20px;
+  margin-left: 35px;
+  padding-right: 10%;
 }
+
 .item2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
   border-radius: 20px;
-  margin: 20px;
-  padding: 10px;
-  text-align: center;
-}
-img {
-  height: 253px;
 }
 
-
-img {
-  width: 195px;
-  height: 260px;
-  align-items: center;
-}
 .title {
   margin: 20px;
   padding: 10px;
-  font-size: 25px;
-  font-family: 'Abril Fatface', cursive;
+  font-size: 45px;
+  font-family: "Abril Fatface", cursive;
   font-weight: 50;
+  text-align: left;
+  text-decoration: underline dotted;
+}
+.title-liberty {
+  margin: 20px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Abril Fatface", cursive;
+  font-weight: 50;
+  text-align: left;
   text-decoration: underline dotted;
 }
 .info {
   list-style-position: inside;
 }
-
-.big-title-two{
+h3 {
+  font-size: 23px;
+}
+.big-title-two {
   margin-top: 4rem;
 }
 
@@ -185,13 +186,23 @@ img {
 }
 
 .liberty {
-  box-shadow: 1px 1px 12px rgba(255, 41, 3, 0.466);
   border-radius: 20px;
   width: 30%;
   height: 25rem;
   padding: 10px 10px 20px 30px;
 }
-
+#white {
+  box-shadow: 1px 1px 12px rgb(179, 172, 172);
+}
+#red {
+  box-shadow: 1px 1px 12px rgb(255, 41, 3);
+}
+#blue {
+  box-shadow: 1px 1px 12px rgba(45, 9, 207, 0.794);
+}
+.txt {
+  font-size: 18px;
+}
 li {
   margin-top: 10px;
   cursor: pointer;
@@ -207,6 +218,9 @@ li {
 
 .copyrights {
   padding-right: 20px;
+  padding-bottom: 20px;
+  line-height: 2em;
+  border: top 1px black;
 }
 
 @media (max-width: 1150px) {
@@ -238,7 +252,7 @@ li {
   }
 
   .burger::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -254,7 +268,7 @@ li {
   }
 
   .burger::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
