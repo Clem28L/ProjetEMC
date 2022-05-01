@@ -10,19 +10,29 @@
 </head>
 
 <body>
+  <div class="taille">
+    <p>La consultation du site sur telephone n'est pas conseillé. veuillez consulter le site sur un ordinateur ou une tablette</p>
+    <button type="button" class="btn-site" onclick="getsite();">accéder au site</button>  
+    <p class="reco">si vous voulez tout de meme consulter le site veillez appuier sur le bouton site dessus et mettre votre telephone en paysage et activer le mode ordinateur sur votre navigateur web</p>  
+  </div>
   <section id="home" class="home-container">
     <header id="header" class="header">
       <img src="images/logo2.png" alt="logo" class="logo" />
       <div class="nav-links">
         <ul class="nav-links">
           <li>
-            <a href="#Accueil" id="Accueil" data-text="Accueil">Accueil</a>
+           
+            <a href="#Accueil" id="Accueil" data-text="Accueil" >Accueil</a>
           </li>
           <li>
             <a href="#liberty-section" id="programme" data-text="Le programme">Le programme</a>
           </li>
           <li>
             <a href="#footer" id="apropos" data-text="A propos">A propos</a>
+          </li>
+          <li>
+            <a href="vf1.jpg" id="affiche" data-text="Telechargé l'affiche de campagne" download="affiche.png">Telechargé l'affiche de campagne</a>
+            
           </li>
         </ul>
       </div>
@@ -45,9 +55,11 @@
         <h2 class="title">Thomas Claye, un candidat pour vous</h2>
         <p>
         <ul class="info">
-          <li >J'ai 24 ans. MA jeunnesse sera une force.</li>
-          <li >blabla </li>
+          <li >J'ai 24 ans.Ma jeunnesse sera une force.</li>
+          <li >Un candidat  trés à l'écoute de vous </li>
           <li >Un programme tout vers la jeunesse. Les jeunes sont notre avenir</li>
+          <li >l'ecologie sera aussi au coeur de mes engagements .</li>
+       
         </ul>
         </p>
 
@@ -57,7 +69,7 @@
      
     </div>
     </div>
-    <section class="liberty-section">
+    <section class="liberty-section" id="liberty-section" >
       <h2 class="big-title-two">Les Liberté, au coeur de nos préoccupations </h2>
       
       <div class="liberty-container">
@@ -122,18 +134,31 @@
   </section>
 
   <footer id="footer" class="footer">
-    <span class="copyrights">&copy; 2022 - Travaille EMC</br>Vous prouvez retrouver l'affiche de campagne en cliquant ici</br>Ce site a entierement été codé en ligne de code pur par nos main sans logiciel tiers de creation de site<br>Clement L. et Thomas C. pour le travaille D'EMC</span>
+    <span class="copyrights">&copy; 2022 - Travaille EMC</br>Vous prouvez retrouver l'affiche de campagne en cliquant <a href="vf1.jpg" download="affiche.png">ici</a> </br>Ce site a entierement été codé en ligne de code pur par nos main sans logiciel tiers de creation de site<br>Clement L. et Thomas C. pour le travaille D'EMC</span>
     
   
   </footer>
   <script>
     const burgerContainer = document.querySelector(".burger-container");
     const navLinks = document.querySelector(".nav-links");
+    const intro = document.querySelector(".introduction");
+    const home = document.querySelector(".home-container");
+    const liberty = document.querySelector(".liberty-section");
+    const btn = document.querySelector(".btn-site");
+
 
     burgerContainer.addEventListener("click", () => {
       burgerContainer.classList.toggle("active");
       navLinks.classList.toggle("active");
     });
+
+    function getsite() {
+      intro.style.display = 'block';
+      home.style.display = 'block';
+      liberty.style.display = 'block';
+
+   }
+  
   </script>
 </body>
 
